@@ -9,4 +9,4 @@ consul-up:
 
 .PHONY: run-example
 run-example:
-	nomad job run example.nomad
+	ls -1 -d src/* | xargs -n 1 nomad job run
